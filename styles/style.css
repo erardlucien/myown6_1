@@ -156,21 +156,17 @@
     display: none;
 }
 
-.service-btn:checked ~ .label-group ~ .service-menu {
+.service-btn:checked ~ .label-service-btn ~ .service-menu {
     display: flex;
 }
 
-.service-btn:checked ~ .label-group > .label-service-btn::before {
+.service-btn:checked ~ .label-service-btn > .service-icon::before {
     background-color: transparent;
     transition: 0.9s;
 }
 
-/* =================================
-   label-group
-   ================================= */
-
-.label-group {
-    display: flex;
+.service-btn:checked ~ .label-service-btn {
+    background-color: lightblue;
 }
 
 /* =================================
@@ -178,6 +174,27 @@
    ================================= */
 
 .label-service-btn {
+    display: flex;
+    width: 120px;
+}
+
+
+/* =================================
+   service-text
+   ================================= */
+
+.service-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 15px;
+}
+
+/* =================================
+   service-icon
+   ================================= */
+
+.service-icon {
     display: flex;
     flex-direction: column;
     width: 15px;
@@ -187,7 +204,7 @@
     margin: 25px 0 0 0;
 }
 
-.label-service-btn::before {
+.service-icon::before {
     content: "";
     width: 15px;
     height: 2px;
