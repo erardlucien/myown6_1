@@ -30,16 +30,6 @@
     padding: 15px 0;
 }
 
-
-/* =================================
-   logo
-   ================================= */
-
-.logo {
-    font-weight: bold;
-    margin: 0 15px;
-}
-
 /* =================================
    breadcrumb-btn
    ================================= */
@@ -48,17 +38,17 @@
     display: none;
 }
 
-.breadcrumb-btn:checked ~ .label-breadcrumb-btn > .breadcrumb-icon::before {
+.breadcrumb-btn:checked ~ .logo-and-label > .label-breadcrumb-btn > .breadcrumb-icon::before {
     transform: rotate(45deg) translate(3px, 4px);
     transition: 0.9s;
 }
 
-.breadcrumb-btn:checked ~ .label-breadcrumb-btn > .breadcrumb-icon {
+.breadcrumb-btn:checked ~ .logo-and-label >  .label-breadcrumb-btn > .breadcrumb-icon {
     background-color: transparent;
     transition: 0.9s;
 }
 
-.breadcrumb-btn:checked ~ .label-breadcrumb-btn > .breadcrumb-icon::after {
+.breadcrumb-btn:checked ~ .logo-and-label >.label-breadcrumb-btn > .breadcrumb-icon::after {
     transform: rotate(-45deg) translate(3px, -4px);
     transition: 0.9s;
 }
@@ -66,6 +56,24 @@
 .breadcrumb-btn:checked ~ .breadcrumb-links {
     display:flex;
     flex-direction: column;
+}
+
+/* =================================
+   logo-and-label
+   ================================= */
+
+.logo-and-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =================================
+   logo
+   ================================= */
+
+.logo {
+    font-weight: bold;
+    margin: 0 15px;
 }
 
 /* =================================
@@ -90,7 +98,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 15px;
+    margin: 10px 15px;
 }
 
 .breadcrumb-icon::after {
@@ -163,17 +171,6 @@
 
 .label-group {
     display: flex;
-}
-
-/* =================================
-   label-service
-   ================================= */
-
-.label-service {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    position: relative;
 }
 
 /* =================================
