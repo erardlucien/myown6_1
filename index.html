@@ -10,13 +10,26 @@
         <header class="body-header">
             <nav class="breadcrumb">
                 <p class="logo">Mon Logo</p>
-                <input type="checkbox" style="display:none" class="breadcrumb-btn" id="breadcrumb-btn">
+                <input type="checkbox" class="breadcrumb-btn" id="breadcrumb-btn">
                 <label for="breadcrumb-btn" class="label-breadcrumb-btn">
                     <span class="breadcrumb-icon"></span>
                 </label>
                 <ul class="breadcrumb-links">
                     <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Homepage</a></li>
-                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Services</a></li>
+                    <li class="breadcrumb-item services">
+                    <input type="checkbox" class="service-btn" id="service-btn">
+                    <div class="label-group">
+                        <label for="service-btn" class="label-service">
+                            <a href="#service-btn" class="breadcrumb-link">Services</a>
+                        </label>
+                        <label for="service-btn" class="label-service-btn"></label>
+                    </div>
+                    <ul class="service-menu">
+                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Service 1</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Service 2</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Service 3</a></li>
+                    </ul>
+                    </li>
                     <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Contact</a></li>
                 </ul>
             </nav>
